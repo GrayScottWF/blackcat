@@ -1,8 +1,10 @@
 import React from "react";
-
+import {
+    StyledHome
+} from './StyledHome'
 function Home() {
     return(
-        <div>homepage</div>
+        <StyledHome>HomePage</StyledHome>
     )
 }
 

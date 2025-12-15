@@ -1,11 +1,10 @@
-
 import { Container } from "react-bootstrap";
 import { 
+    StyledNavbarWrapper,
     StyledNavbar,
     StyledLogo,
     StyledNavItems,
     StyledNavItem,
-    StyledNavItemsGap,
     StyledSearch,
     StyledText,
     StyledSearchBtn,
@@ -25,6 +24,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return(
         <>
+        <StyledNavbarWrapper>
         <StyledNavbar>
             <Link to={'/'}>
                 <StyledLogo src="/src/assets/images/Logo.jpg" alt="404" />
@@ -38,51 +38,50 @@ function Navbar() {
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>服務介紹</StyledMenuTitle>
                                     <StyledMenuItem1>
-                                        <StyledMenuLink>常溫宅急便</StyledMenuLink>
-                                        <StyledMenuLink>低溫宅急便</StyledMenuLink>
-                                        <StyledMenuLink>經濟宅急便</StyledMenuLink>
-                                        <StyledMenuLink>到付宅急便</StyledMenuLink>
-                                        <StyledMenuLink>高爾夫宅急便</StyledMenuLink>
-                                        <StyledMenuLink>醫藥物流服務</StyledMenuLink>
-                                        <StyledMenuLink>宅轉店</StyledMenuLink>
-                                        <StyledMenuLink>快速到店</StyledMenuLink>
-                                        <StyledMenuLink>倉儲服務</StyledMenuLink>
-                                        <StyledMenuLink>黑貓探險隊</StyledMenuLink>
-                                        <StyledMenuLink>金流代收服務</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>常溫宅急便</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>低溫宅急便</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>經濟宅急便</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>到付宅急便</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>高爾夫宅急便</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>醫藥物流服務</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>宅轉店</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>快速到店</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>倉儲服務</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>黑貓探險隊</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>金流代收服務</Link></StyledMenuLink>
                                     </StyledMenuItem1>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>icat網路宅急便</StyledMenuTitle>
                                     <StyledMenuItem1>
-                                        <StyledMenuLink>服務說明</StyledMenuLink>
-                                        <StyledMenuLink>單筆預約寄件</StyledMenuLink>
-                                        <StyledMenuLink>多筆預約寄件</StyledMenuLink>
-                                        <StyledMenuLink>icat app</StyledMenuLink>
-                                        <StyledMenuLink>訂單管理</StyledMenuLink>
-                                        <StyledMenuLink>配完通知&查詢</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>服務說明</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>單筆預約寄件</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>多筆預約寄件</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>icat app</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>訂單管理</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>配完通知&查詢</Link></StyledMenuLink>
                                     </StyledMenuItem1>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>寄件指南</StyledMenuTitle>
                                     <StyledMenuItem1>
-                                        <StyledMenuLink>包裝建議</StyledMenuLink>
-                                        <StyledMenuLink>託運條款</StyledMenuLink>
-                                        <StyledMenuLink>不受理項目</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>包裝建議</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>託運條款</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>不受理項目</Link></StyledMenuLink>
                                     </StyledMenuItem1>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>包裝資材</StyledMenuTitle>
                                     <StyledMenuItem1>
-                                        <StyledMenuLink>包裝資材訂購</StyledMenuLink>
-                                        <StyledMenuLink>訂單管理</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>包裝資材訂購</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>訂單管理</Link></StyledMenuLink>
                                     </StyledMenuItem1>
                                 </StyledDropDownMenuItem>
                             </StyledDropDownMenu>
                         </Container>
                     </StyledDropDown>
                 </StyledNavItem>
-                <StyledNavItemsGap/>
-                <StyledNavItem>
+                                <StyledNavItem>
                     <StyledNavItemTitle>查詢</StyledNavItemTitle>
                     <StyledDropDown className="DropDown">
                         <Container>
@@ -90,30 +89,29 @@ function Navbar() {
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>包裹查詢</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>包裹查詢說明</StyledMenuLink>
-                                        <StyledMenuLink>一般包裹查詢</StyledMenuLink>
-                                        <StyledMenuLink>連號包裹查詢</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>包裹查詢說明</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>一般包裹查詢</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>連號包裹查詢</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>運送及送達時間查詢</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>送達時間說明</StyledMenuLink>
-                                        <StyledMenuLink>運費說明</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>送達時間說明</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>運費說明</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>服務據點查詢</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>黑貓寄取站查詢</StyledMenuLink>
-                                        <StyledMenuLink>合作代收查詢</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>黑貓寄取站查詢</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>合作代收查詢</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                                             </StyledDropDownMenu>
                         </Container>
                     </StyledDropDown>
                 </StyledNavItem>
-                <StyledNavItemsGap/>
                 <StyledNavItem>
                     <StyledNavItemTitle>客戶服務</StyledNavItemTitle>
                     <StyledDropDown className="DropDown">
@@ -122,17 +120,17 @@ function Navbar() {
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>常見問題</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>常見問題</StyledMenuLink>
-                                        <StyledMenuLink>跨境包過消費爭議專區</StyledMenuLink>
-                                        <StyledMenuLink>ezcat下載</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>常見問題</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>跨境包過消費爭議專區</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>ezcat下載</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>聯絡黑貓</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>網路客服</StyledMenuLink>
-                                        <StyledMenuLink>智能客服</StyledMenuLink>
-                                        <StyledMenuLink>自助寄件專線</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>網路客服</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>智能客服</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>自助寄件專線</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
@@ -144,7 +142,6 @@ function Navbar() {
                         </Container>
                     </StyledDropDown>
                 </StyledNavItem>
-                <StyledNavItemsGap/>
                 <StyledNavItem>
                     <StyledNavItemTitle>個人會員</StyledNavItemTitle>
                     <StyledDropDown className="DropDown">
@@ -153,26 +150,26 @@ function Navbar() {
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>icat網路宅急便</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>服務說明</StyledMenuLink>
-                                        <StyledMenuLink>單筆預約寄件</StyledMenuLink>
-                                        <StyledMenuLink>多筆預約寄件</StyledMenuLink>
-                                        <StyledMenuLink>會員登入</StyledMenuLink>
-                                        <StyledMenuLink>會員資料維護</StyledMenuLink>
-                                        <StyledMenuLink>訂單管理</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>服務說明</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>單筆預約寄件</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>多筆預約寄件</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>會員登入</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>會員資料維護</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>訂單管理</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>LINE</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>服務說明</StyledMenuLink>
-                                        <StyledMenuLink>加入好友</StyledMenuLink>
-                                        <StyledMenuLink>加入會員</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>服務說明</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>加入好友</Link></StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>加入會員</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
                                     <StyledMenuTitle>綁定uniopen</StyledMenuTitle>
                                     <StyledMenuItem2>
-                                        <StyledMenuLink>累積/折抵使用辦法</StyledMenuLink>
+                                        <StyledMenuLink><Link to={"#!"}>累積/折抵使用辦法</Link></StyledMenuLink>
                                     </StyledMenuItem2>
                                 </StyledDropDownMenuItem>
                                 <StyledDropDownMenuItem>
@@ -184,7 +181,6 @@ function Navbar() {
                         </Container>
                     </StyledDropDown>
                 </StyledNavItem>
-                <StyledNavItemsGap/>
                 <StyledNavItem>
                     <StyledNavItemTitle>契約客戶專區</StyledNavItemTitle>
                     <StyledDropDown className="DropDown">
@@ -218,6 +214,7 @@ function Navbar() {
         <StyledDropDown>
 
         </StyledDropDown>
+        </StyledNavbarWrapper>
         </>
     )
 

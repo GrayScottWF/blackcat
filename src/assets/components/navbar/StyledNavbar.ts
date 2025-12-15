@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const StyledNavbarWrapper = styled.div`
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+    background: #fff;
+    z-index: 99999;
+`
+
 export const StyledNavbar = styled.div`
     display: flex;
     justify-content: space-between;
@@ -18,17 +26,20 @@ export const StyledNavItems = styled.ul`
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    width: 50%;
-    height: 90px;
 `
 
-export const StyledNavItemsGap = styled.div`
-    width: 2px;
-    height: 22px;
-    background-color: #ccc;
-    
-`
 export const StyledNavItem = styled.li`
+    height: 90px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+    &:not(:first-child)::before{
+        content: '';
+        height: 22px;
+        border-left: 2px solid #E7E7E7;
+    }
+
     &:hover .DropDown{
         display: flex;
     }
@@ -37,8 +48,12 @@ export const StyledNavItem = styled.li`
 export const StyledNavItemTitle = styled.span`
     position: relative;
     font-size: 20px;
-    margin: 0 2.5vh;
+    margin: 0 2.5vw;
     transition: all  0.2s;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     cursor: pointer;
 
@@ -102,9 +117,7 @@ export const StyledSearchBtn = styled.button`
 
 export const StyledDropDown = styled.div`
     display: none;
-    /* display: flex; */
     max-height: 352px;
-    /* height: 352px; */
     width: 100%;
     background-color: rgba(240, 240, 240, 0.9);
 
@@ -120,14 +133,10 @@ export const StyledDropDownMenu = styled.ul`
     display: flex;
     flex-direction: row;
     padding: 24px 0;
-    /* padding-top: 24px; */
-    /* justify-content: left; */
 
 `
 
 export const StyledDropDownMenuItem = styled.li`
-    /* display: flex; */
-    /* justify-content: left; */
     margin: 0 24px;
 
 `
@@ -168,6 +177,11 @@ export const StyledMenuLink = styled.li`
     font-size: 16px;
     margin-top: 16px;
     padding-right: 64px;
+    transition: all 0.3s;
+    
+    &:hover{
+        color: #009380;
+    }
 `
 
 
