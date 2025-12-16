@@ -1,5 +1,5 @@
 import {
-    StyledBg,
+    // StyledBg,
     StyledContents,
     StyledFooterItems,
     StyledFooterItem,
