@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+
+
 export const StyledFooter = styled.div`
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
 
 `
 

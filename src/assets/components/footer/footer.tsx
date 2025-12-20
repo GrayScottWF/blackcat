@@ -1,5 +1,6 @@
 import {
-    // StyledBg,
+    StyledFooter,
+    StyledBg,
     StyledContents,
     StyledFooterItems,
     StyledFooterItem,
@@ -23,7 +24,8 @@ import {
 function Footer() {
     return(
         <>
-            {/* <StyledBg /> */}
+        <StyledFooter>
+            <StyledBg />
             <StyledContents>
                 <StyledFooterItems>
                     <StyledFooterItem>
@@ -128,6 +130,8 @@ function Footer() {
                     </StyledCrLinks>
                 </StyledCrLinksArea>
             </StyledCrArea>
+
+        </StyledFooter>
         </>
 
     )
